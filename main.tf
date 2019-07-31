@@ -5,7 +5,7 @@ data "template_file" "test" {
 }
 
 resource "null_resource" "sleep" {
-  count=2000
+  count=1000
   triggers {
     uuid = "${uuid()}"
   }
